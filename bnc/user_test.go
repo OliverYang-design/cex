@@ -239,6 +239,10 @@ func TestUser_VIPLoanApplicationStatus(t *testing.T) {
 	userTestChecker(newTestVIPPortmarUser().VIPLoanApplicationStatus())
 }
 
+func TestUser_VIPLoanCollateralAssets(t *testing.T) {
+	userTestChecker(newTestVIPPortmarUser().VIPLoanCollateralAssets(""))
+}
+
 func TestUser_PortfolioMarginAccountDetail(t *testing.T) {
 	userTestChecker(newTestVIPPortmarUser().PortfolioMarginAccountDetail())
 }
